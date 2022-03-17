@@ -1,6 +1,6 @@
 FROM tomcat:latest
 
-RUN yum  update -y
+RUN apt-get update -y
 #RUN apt-get install zip unzip vim -y
 RUN rm -rf /usr/local/tomcat/webapps.dist/ROOT
 RUN mv /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/.
